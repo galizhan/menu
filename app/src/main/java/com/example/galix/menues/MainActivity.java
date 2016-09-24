@@ -20,11 +20,17 @@ public class MainActivity extends AppCompatActivity {
     private static final int IDT_TXT1 = 201;
     private static final int IDT_TXT2 = 202;
     private static final int IDT_TXT3 = 203;
+    private static final int IDT_TXT12 = 301;
+    private static final int IDT_TXT22 = 302;
+    private static final int IDT_TXT32 = 303;
+    private static final int IDT_TXT13 = 401;
+    private static final int IDT_TXT23 = 402;
+    private static final int IDT_TXT33 = 403;
     RelativeLayout rl;
     SubMenu subMenu;
     MenuItem item1;
     int temp = 0;
-    Button btn;
+    Button btn,btn2,btn3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +99,16 @@ public class MainActivity extends AppCompatActivity {
                 menu.add(0, IDT_TXT2, 0, "Text 2");
                 menu.add(0, IDT_TXT3, 0, "Text 3");
                 break;
+            case R.id.btn2:
+                menu.add(0, IDT_TXT1, 0, "Text 1");
+                menu.add(0, IDT_TXT2, 0, "Text 2");
+                menu.add(0, IDT_TXT3, 0, "Text 3");
+                break;
+            case R.id.btn3:
+                menu.add(0, IDT_TXT1, 0, "Text 1");
+                menu.add(0, IDT_TXT2, 0, "Text 2");
+                menu.add(0, IDT_TXT3, 0, "Text 3");
+                break;
         }
     }
 
@@ -106,6 +122,24 @@ public class MainActivity extends AppCompatActivity {
                 btn.setText("text 2");
                 break;
             case IDT_TXT3:
+                btn.setText("text 3");
+                break;
+            case IDT_TXT12:
+                btn.setText("text 1");
+                break;
+            case IDT_TXT22:
+                btn.setText("text 2");
+                break;
+            case IDT_TXT32:
+                btn.setText("text 3");
+                break;
+            case IDT_TXT13:
+                btn.setText("text 1");
+                break;
+            case IDT_TXT23:
+                btn.setText("text 2");
+                break;
+            case IDT_TXT33:
                 btn.setText("text 3");
                 break;
         }

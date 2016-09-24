@@ -16,6 +16,24 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn1"
         android:text="btn1"
-
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:text="btn2"
+        android:layout_toLeftOf="@id/btn1"
+        android:layout_alignBaseline="@id/btn1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:text="btn3"
+        android:layout_toRightOf="@id/btn1"
+        android:layout_alignBaseline="@id/btn1"
+        />
+
 </RelativeLayout>
