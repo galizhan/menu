@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 if(temp!=0) item1.setVisible(true);
                 item1.setVisible(true);
                 rl.setBackgroundColor(getResources().getColor(R.color.colorGreen));
+                item1 = item;
                 item.setVisible(false);
                 break;
 
