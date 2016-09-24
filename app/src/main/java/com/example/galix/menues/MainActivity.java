@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private static final int IDT_TXT3 = 203;
     RelativeLayout rl;
     SubMenu subMenu;
-    boolean menuShow;
-    int disabled,temp ;
+    MenuItem item1;
+    int temp = 0;
     Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,20 +56,27 @@ public class MainActivity extends AppCompatActivity {
             case IDM_SETTINGS:
                 Toast toast = Toast.makeText(getApplicationContext(),"You have pressed settings",Toast.LENGTH_LONG);
                 toast.show();
+                break;
             case 3:
+                if(temp!=0) item1.setVisible(true);
+                temp++;
                 rl.setBackgroundColor(getResources().getColor(R.color.colorRed));
-//                item.setVisible(false);
-                disabled = 1;
+                item1 = item;
+                item.setVisible(false);
                 break;
             case  4:
+                if(temp!=0) item1.setVisible(true);
+                item1.setVisible(true);
                 rl.setBackgroundColor(getResources().getColor(R.color.colorYellow));
-//                item.setChecked(false);
-                disabled = 2;
+                item1 = item;
+                item.setVisible(false);
                 break;
+
             case 5:
+                if(temp!=0) item1.setVisible(true);
+                item1.setVisible(true);
                 rl.setBackgroundColor(getResources().getColor(R.color.colorGreen));
-//                item.setVisible(false);
-                disabled = 3;
+                item.setVisible(false);
                 break;
 
         }
