@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rl = (RelativeLayout)findViewById(R.id.rel);
         btn = (Button)findViewById(R.id.btn1);
+        btn2 = (Button)findViewById(R.id.btn1);
+        btn3 = (Button)findViewById(R.id.btn1);
         registerForContextMenu(btn);
     }
 
@@ -72,17 +74,20 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case  4:
                 if(temp!=0) item1.setVisible(true);
+                temp++;
                 item1.setVisible(true);
                 rl.setBackgroundColor(getResources().getColor(R.color.colorYellow));
+
                 item1 = item;
                 item.setVisible(false);
                 break;
 
             case 5:
                 if(temp!=0) item1.setVisible(true);
+                temp++;
                 item1.setVisible(true);
                 rl.setBackgroundColor(getResources().getColor(R.color.colorGreen));
-                item1 = item;
+
                 item.setVisible(false);
                 break;
 
@@ -126,22 +131,22 @@ public class MainActivity extends AppCompatActivity {
                 btn.setText("text 3");
                 break;
             case IDT_TXT12:
-                btn.setText("text 1");
+                btn2.setText("text 1");
                 break;
             case IDT_TXT22:
-                btn.setText("text 2");
+                btn2.setText("text 2");
                 break;
             case IDT_TXT32:
-                btn.setText("text 3");
+                btn2.setText("text 3");
                 break;
             case IDT_TXT13:
-                btn.setText("text 1");
+                btn3.setText("text 1");
                 break;
             case IDT_TXT23:
-                btn.setText("text 2");
+                btn3.setText("text 2");
                 break;
             case IDT_TXT33:
-                btn.setText("text 3");
+                btn3.setText("text 3");
                 break;
         }
         return super.onContextItemSelected(item);
